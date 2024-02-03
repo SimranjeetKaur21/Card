@@ -32,24 +32,12 @@ public class CardTrick {
         Card luckyCard= new Card();
         luckyCard.setValue(2);
         luckyCard.setSuit(Card.SUITS[3]);
-
-        
-        //insert code to ask the user for Card value and suit, create their card
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Pick the Card value: ");
-        int userValue = scanner.nextInt();
-        System.out.print("Pick the card suit (0-3): ");
-        int userSuit = scanner.nextInt();
-        
-        
-        Card userCard = new Card();
-        userCard.setValue(userValue);
-        userCard.setSuit(Card.SUITS[userSuit]);
+    
         
         // and search magicHand here
         boolean isCardInMagicHand= false;
         for (Card card: magicHand){
-            if (card.equals(userCard)){
+            if (card.equals(luckyCard)){
                 isCardInMagicHand = true;
                  break;
                 
