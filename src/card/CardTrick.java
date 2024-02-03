@@ -29,6 +29,10 @@ public class CardTrick {
         }
         
         // add one luckcard hard code 2,clubs
+        Card luckyCard= new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit(Card.SUITS[3]);
+
         
         //insert code to ask the user for Card value and suit, create their card
         Scanner scanner = new Scanner(System.in);
